@@ -1,0 +1,43 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7; /* height between lines */
+  color: #777;
+  padding: 30px;
+}
+
+.headerStyle {
+  font-weight: 900;
+
+  height: 95vh; /* height of this style is 95% of the viewport height */
+  padding: 5px;
+
+  background-image: linear-gradient(to bottom right, #28b485fb, #7ed56f9d),
+    url(../img/hero.jpg);
+  /* linear gradient - params. direction, starting colour, ending colour. 
+    then can choose the image by a comma, then url() */
+
+  background-size: cover; /* fits the width to the viewport */
+
+  background-position: top; /* fits the background image's top position fixed even when the screen width changes. 
+  values can be top,bottom,center,left,right */
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+  /* can put as many as x-y coordinates. clockwise direction*/
+}
